@@ -6,7 +6,16 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:testing": "npx eas-cli build --profile testing --platform all",
+    "build:production": "npx eas-cli build --profile production --platform all",
+    "submit": "npx eas-cli submit --profile production --latest --platform all",
+    "submit:ios": "npx eas-cli submit --profile production --latest --platform ios",
+    "submit:android": "npx eas-cli submit --profile production --latest --platform android",
+    "build-ios:testing": "npx eas-cli build --profile testing --platform ios",
+    "build-ios:production": "npx eas-cli build --profile production --platform ios",
+    "build-android:testing": "npx eas-cli build --profile testing --platform android",
+    "build-android:production": "npx eas-cli build --profile production --platform android"
   },
   "dependencies": {
     "expo": "~47.0.8",

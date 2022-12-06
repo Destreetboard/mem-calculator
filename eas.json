@@ -1,0 +1,50 @@
+{
+  "cli": {
+    "version": ">= 0.40.0"
+  },
+  "build": {
+    "development": {
+      "node": "16.9.1",
+      "releaseChannel": "development",
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "APP_VARIANT": "development"
+      }
+    },
+    "testing": {
+      "node": "16.11.0",
+      "distribution": "internal",
+      "releaseChannel": "testing",
+      "env": {
+        "APP_VARIANT": "testing"
+      }
+    },
+    "production": {
+      "node": "16.9.1",
+      "releaseChannel": "production",
+      "env": {
+        "APP_VARIANT": "production"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "track": "production",
+        "releaseStatus": "completed",
+        "serviceAccountKeyPath": "./pc-api-5202469084285205253-680-0519b9590b83.json"
+      },
+      "ios": {
+        "appleId": "nnamanikester@gmail.com",
+        "ascAppId": "1611047994",
+        "appleTeamId": "9BLJN4NSKC",
+        "sku": "mem-calculator",
+        "bundleIdentifier": "com.destreetboard.mem-calculator",
+        "ascApiKeyIssuerId": "aa6001d6-3c1f-4b29-b168-96338cf23da3",
+        "ascApiKeyId": "LPQXL4AYW6",
+        "ascApiKeyPath": "./AuthKey_LPQXL4AYW6.p8"
+      }
+    }
+  }
+}
