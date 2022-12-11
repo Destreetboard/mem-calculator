@@ -3,8 +3,8 @@ const IS_TEST = process.env.APP_VARIANT === "testing";
 const buildNumber = 1;
 
 const appID = IS_TEST
-  ? "com.destreetboard.mem-calculator.test"
-  : "com.destreetboard.mem-calculator";
+  ? "com.destreetboard.memcalculator.test"
+  : "com.destreetboard.memcalculator";
 
 export default {
   expo: {
